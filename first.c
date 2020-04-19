@@ -14,12 +14,18 @@
 // List of important compiler options to be aware of
 // cl [source file] /nologo
 //     - suppresses display of sign-on banner, in otherwords, copyright message and version number
+// cl [source file] /W4
+//     - display all warnings that aren't off by default. /W0 - /W3 are also options
+//       with different levels of reporting
+// cl [source file] /Wall
+//     - display all warnings included those turned off by default.
+// cl [source file] /TP
+//     - specifics all source files are C++. Will check against the C++ compiler
+// insures portability in a C++ program.
 
 // https://stackoverflow.com/questions/11150883/using-printf-function-without-actually-importing-stdio-h-and-it-worked-why-is
 #include <stdio.h>
-// cl /Wall first.c enables all warnings
-// /nologo
-// /W4
+
 // TP
 // (flags == switches)?
 
